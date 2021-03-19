@@ -1,0 +1,33 @@
+<div id="e_conteneur_nav">
+    <div id="imageMontauban">
+        <img src="./assets/images/logo_montauban.png" alt="Logo Montauban">
+    </div>
+    <form id="e_login" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <div id="id"><label for="Nom"></label>
+            <input type="text" id="nom" name="username" required placeholder="Entre votre identifiant"> </br>
+            <label for="prenom"></label>
+        </div>
+        <div id="mdp"><input type="password" id="prenom" name="pass" required placeholder="Entrez votre mot de passe">
+            <a href="liste_client.php"><button type="submit" name="submit" value="se connecter">Se connecter</button></a>
+        </div>
+    </form>
+</div>
+
+<!-- <form method="post"  action="<?php echo $_SERVER['PHP_SELF']; ?>">
+		<table>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="pass"></td>
+			</tr>
+			<tr>
+				<td colspan=2><hr></td>
+			</tr>
+			<tr>
+				<td><button type="submit" name="submit">Login</button></td>
+			</tr>
+		</table>
+	</form> -->

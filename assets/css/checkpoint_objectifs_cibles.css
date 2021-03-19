@@ -1,0 +1,59 @@
+@charset "utf-8";
+#e_conteneur_check{
+    width: 88vw;
+    height: auto;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    top: 15vh;
+    left: 7vh;
+    display: flex;
+    justify-content: center;
+}
+
+#e_view_objectifs_cibles {
+    height: 600px;
+}
+table{
+    border-collapse: collapse;
+    border: medium solid #000000;
+    width: 80vw;
+  }
+  
+  th, td{
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  td strong{
+      font-size: 1.4em;
+  }
+  .montauban{
+      background:rgb(233, 86, 86);
+  }
+  .gauthier{
+      background:grey;
+  }
+  .funeraire{
+      background:violet;
+  }
+  .facade{
+      background:yellow;
+      color: black;
+  }
+  .check_globaux{
+      background:grey;
+      border: 2px solid black;
+  }
+  .archive{
+      background: green;
+      border: 2px solid black;
+  }
+.check_globaux a{
+    text-decoration: none;
+    color:black;
+}
+.check_globaux a:hover{
+    color:white;
+    text-decoration:none;
+}

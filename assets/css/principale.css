@@ -1,0 +1,10 @@
+@charset "utf-8";
+body{
+    background-color: #d4d4d4;
+    padding: 0;
+    color: black;
+    margin: 0;
+}
+#k_contenu_page{
+    margin-left: 10vw;
+}

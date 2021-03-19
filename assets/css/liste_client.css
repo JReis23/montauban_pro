@@ -1,0 +1,43 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+#k_list_client{
+    width: 90vw;
+    height: 100vh;
+    margin-left: 4.5vw;
+}
+#k_addons_client{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#k_addons_client input:focus{
+    outline: none;
+}
+#k_addons_client button:focus{
+    outline: none;
+}
+.k_banniere_client{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.k_cont_bann_client{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.containerlistClient{
+	width: 89vw;
+	height: 63vh;
+	background: #f1f1f1;
+	border-radius: 2px;
+}
+
+.imglisteClient{
+    height: 60px !important;
+}

@@ -1,0 +1,166 @@
+<html>
+
+<head>
+    <meta name="description" content="Logiciel de gestion de process Montauban">
+    <meta charset="utf-8">
+    <title>Montauban Developpement</title>
+    <?php
+            include './assets/js/scriptbefore.html';
+            include './assets/css/css.html';
+        ?>
+</head>
+
+<body>
+
+<?php
+    include './templates/header.html';
+?>
+
+<div id="e_conteneur_check_">
+    <div id="e_view_objectifs_cibles">
+        <table>
+            <tr>
+              <td>Envois de devis client </td>
+              <td ><strong>Entreprise</strong></td>
+              <td><strong>Client</strong></td>
+              <td><strong>Date</strong></td>
+              <td><strong>Coordonnées</strong></td>
+            </tr>
+            <tr>
+              <td class="montauban">Envois de devis client </td>
+              <td class="montauban">Montauban</td>
+              <td class="montauban">Nardou Etienne</td>
+              <td class="montauban">10/02/2021</td>
+              <td class="montauban">0545658415</td>
+              <td class="archive">Archiver</td>
+
+            </tr>
+            <tr>
+              <td class="facade">Envois de devis client </td>
+              <td class="facade">Façade</td>
+              <td class="facade">Nardou Etienne</td>
+              <td class="facade">10/02/2021</td>
+              <td class="facade">0545758415</td>
+              <td class="archive">Archiver</td>
+            </tr>
+            <tr>
+                <td class="montauban">Envois de devis client </td>
+                <td class="montauban">Montauban</td>
+                <td class="montauban">Nardou Etienne</td>
+                <td class="montauban">10/02/2021</td>
+                <td class="montauban">0545658415</td>
+                <td class="archive">Archiver</td>
+            </tr>
+            <tr>
+                <td class="gauthier">Envois de devis client </td>
+                <td class="gauthier">Gauthier entreprise</td>
+                <td class="gauthier">Nardou Etienne</td>
+                <td class="gauthier">10/02/2021</td>
+                <td class="gauthier">0545125484</td>
+                <td class="archive">Archiver</td>
+            </tr>
+            <tr>
+                <td class="gauthier">Envois de devis client </td>
+                <td class="gauthier">Gauthier entreprise</td>
+                <td class="gauthier">Nardou Etienne</td>
+                <td class="gauthier">10/02/2021</td>
+                <td class="gauthier">0545125484</td>
+                <td class="archive">Archiver</td>
+              </tr>
+              <tr>
+                <td class="facade">Envois de devis client </td>
+                <td class="facade">Façade</td>
+                <td class="facade">Nardou Etienne</td>
+                <td class="facade">10/02/2021</td>
+                <td class="facade">0545758415</td>
+                <td class="archive">Archiver</td>
+              </tr>
+              <tr>
+            <td class="montauban">Envois de devis client </td>
+              <td class="montauban">Montauban</td>
+              <td class="montauban">Nardou Etienne</td>
+              <td class="montauban">10/02/2021</td>
+              <td class="montauban">0545658415</td>
+              <td class="archive">Archiver</td>
+              </tr>
+              <tr>
+                <td class="facade">Envois de devis client </td>
+                <td class="facade">Façade</td>
+                <td class="facade">Nardou Etienne</td>
+                <td class="facade">10/02/2021</td>
+                <td class="facade">0545758415</td>
+                <td class="archive">Archiver</td>
+              </tr>
+              <tr>
+                <td class="facade">Envois de devis client </td>
+                <td class="facade">Façade</td>
+                <td class="facade">Nardou Etienne</td>
+                <td class="facade">10/02/2021</td>
+                <td class="facade">0545758415</td>
+                <td class="archive">Archiver</td>
+              </tr>
+              <tr>
+                <td class="montauban">Envois de devis client </td>
+              <td class="montauban">Montauban</td>
+              <td class="montauban">Nardou Etienne</td>
+              <td class="montauban">10/02/2021</td>
+              <td class="montauban">0545658415</td>
+              <td class="archive">Archiver</td>
+              </tr>
+              <tr>
+                <td class="funeraire">Envois de devis client </td>
+                <td class="funeraire">Funéraire</td>
+                <td class="funeraire">Nardou Etienne</td>
+                <td class="funeraire">10/02/2021</td>
+                <td class="funeraire">0545958545</td>
+                <td class="archive">Archiver</td>
+              </tr>
+              <tr>
+                <td class="montauban">Envois de devis client </td>
+              <td class="montauban">Montauban</td>
+              <td class="montauban">Nardou Etienne</td>
+              <td class="montauban">10/02/2021</td>
+              <td class="montauban">0545658415</td>
+              <td class="archive">Archiver</td>
+              </tr>
+              <tr>
+                <td class="gauthier">Envois de devis client </td>
+                <td class="gauthier">Gauthier entreprise</td>
+                <td class="gauthier">Nardou Etienne</td>
+                <td class="gauthier">10/02/2021</td>
+                <td class="gauthier">0545125484</td>
+                <td class="archive">Archiver</td>
+              </tr>
+              <tr>
+                <td class="montauban">Envois de devis client </td>
+                <td class="montauban">Montauban</td>
+                <td class="montauban">Nardou Etienne</td>
+                <td class="montauban">10/02/2021</td>
+                <td class="montauban">025547856</td>
+                <td class="archive">Archiver</td>
+              </tr>
+              <tr>
+                <td class="funeraire">Envois de devis client </td>
+                <td class="funeraire">Funéraire</td>
+                <td class="funeraire">Nardou Etienne</td>
+                <td class="funeraire">10/02/2021</td>
+                <td class="funeraire">0545958545</td>
+                <td class="archive">Archiver</td>
+              </tr>
+              <tr>
+                <td class="gauthier">Envois de devis client </td>
+                <td class="gauthier">Gauthier entreprise</td>
+                <td class="gauthier">Nardou Etienne</td>
+                <td class="gauthier">10/02/2021</td>
+                <td class="gauthier">0545125484</td>
+                <td class="archive">Archiver</td>
+              </tr>
+          </table>
+</div>
+</div>
+<?php
+    include './assets/js/script.html';
+
+    ?>
+</body>
+</html>

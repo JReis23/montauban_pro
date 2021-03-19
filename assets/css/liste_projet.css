@@ -1,0 +1,62 @@
+#k_liste_projet {
+  width: 80vw;
+  height: 100vh;
+}
+.k_container_liste_projet{
+    width: 100%;
+    height: 100vh;
+}
+.k_tableau_projet{
+  overflow-y: scroll;
+  height: 90vh;
+  scrollbar-width: thin;
+}
+.k_titre_liste_projet{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 1.3em;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  background-color: #686d8b;
+}
+.k_titre_liste_projet span{
+  padding:20px;
+  color: white;
+}
+.k_donnee_liste_projet{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.k_donnee_liste_projet span{
+  padding:20px;
+}
+.k_donnee_liste_projet:nth-child(odd){
+  background-color: rgb(255, 255, 255);
+}
+.k_donnee_liste_projet:nth-child(even){
+  background-color: rgb(194, 194, 194);
+}
+
+.k_liste_entreprise{
+  height: 100vh;
+  width: 10vw;
+  background: radial-gradient(#022060,#191e3f);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.k_liste_entreprise span{
+  margin-top: 20px;
+  cursor: pointer;
+}
+.k_titre_table_liste_projet{
+  display: flex; 
+  align-items: center; 
+  justify-content: space-around;
+  color: white;
+}

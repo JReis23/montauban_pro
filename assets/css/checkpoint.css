@@ -1,0 +1,221 @@
+@charset "utf-8";
+#e_conteneur_check {
+    width: 88vw;
+    height: auto;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    top: 15vh;
+    left: 7vh;
+    display: flex;
+    justify-content: center;
+}
+
+#e_view_checkpoint {
+    height: 600px;
+    width: 70%
+}
+#box1{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+
+}
+#box2{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid black;
+    
+}
+#box3{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#box4{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid black;
+}
+#box5{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+#e_check1 {
+    display: flex;
+    border: 2px solid black;
+}
+
+#e_check2 {
+    display: flex;
+    border: 2px solid black;
+}
+
+#e_check3 {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
+#e_check3_Domi{
+    display: flex;
+    justify-content: center;
+    border-left: 2px solid black;
+    width:50%;
+}
+.e_lesChecks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+#e_visite_chantier{
+    width: 60%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#e_RDV {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#e_nombreRDV {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+#e_consultations_fournisseurs{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nbr_consultations_fournisseurs{
+    display: flex;
+    align-items: center;
+}
+#e_nbr_realisations_devis{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#e_envois_à_christelle{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #e_nbr_envois_a_christelle_cd{
+    
+} */
+#e_nbr_envois_a_christelle{
+    display: flex;
+    align-items: center;
+
+}
+#e_envoisDevisClient {
+    width: 70%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#e_verifReceptionClient {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#e_demande_prealable_travaux{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column; 
+    width: 60vw;
+}
+#nbr_demande_prealable_travaux{
+    display: flex;
+    align-items: center;
+}
+#e_dates_prevus_fin_chantier{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#e_offreFinale {
+    width: 70%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#e_clotureDossier {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#e_validation_devis{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#e_clotureDossier_Virginie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 2px solid black;
+}
+#e_nbr_ClotureDossier{
+    display: flex;
+    align-items: center;
+}
+
+.e_lesChecks a{
+    color: black;
+    text-decoration: solid;
+    font-size: 1.3em;
+}
+ul{
+    list-style: none;
+    font-size: 3vh;
+}
+#montauban{
+color:rgb(233, 86, 86);
+}
+#funeraire{
+color:violet;
+}
+#gauthier{
+color:grey;
+}
+#facade{
+    color:yellow;
+
+}

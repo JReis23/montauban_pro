@@ -1,0 +1,41 @@
+
+
+#page_broadcast{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 10vw;
+    height: 100vh;
+}
+
+button{
+    background-color: rgb(61, 152, 255);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#tableau{
+    border: white solid 1px;
+}
+
+tbody, td, tfoot, th, thead{
+    border: solid 1px white;
+}
+
+.board{
+    border: white solid 1px;
+    text-align: center;
+}
+
+td{
+    font-size: 1rem;
+}
+
+
+.row{
+    height: 90vh;
+}

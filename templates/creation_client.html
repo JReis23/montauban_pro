@@ -1,0 +1,84 @@
+<div id="k_creation_client">
+    <div style="display: flex; width: 100%;">
+        <div style="display: flex; flex-direction: column; width: 40%; justify-content: space-around;">
+            <div>
+                <div onclick="afficherLogo()" style="cursor: pointer;">
+                    <img src="./assets/images/avatar.png" id="k_logo1" style="width: 100px;">
+                </div>
+                <div id="k_liste_logo" style="cursor: pointer;">
+                    <img src="./assets/images/construction.jpg" onclick="changerLogo2()" id="k_logo2"
+                        style="width: 100px;">
+                    <img src="./assets/images/logo_montauban.jpg" onclick="changerLogo3()" id="k_logo3"
+                        style="width: 100px;">
+                    <img src="./assets/images/montauban_and_fils.png" onclick="changerLogo4()" id="k_logo4"
+                        style="width: 100px;">
+                </div>
+            </div>
+            <form id="contact_client">
+                <div class="k_border">
+                    <label for="dateCreationClient"><strong>DATE : </strong></label><input type="date"
+                        id="dateCreationClient">
+                </div>
+        </div>
+        <div style="display: flex; flex-direction: column; width: 60%;justify-content: space-around;">
+            <div style="text-align: center;" class="k_border"><strong>FICHE CLIENT</strong></div>
+            <div class="k_border">
+                <label for="nomAdresseCreationClient"><strong>Nom et adresse</strong></label><br>
+                <input type="text" name="nom" id="nomAdresseCreationClient" style="width: 100%; height: 10vh;">
+            </div>
+            <div class="k_border">
+                <strong>TELEPHONES</strong><br>
+                <label for="telFixeCreationClient" style="margin-left: 40px;">Fixe : </label><input type="tel"
+                    id="telFixeCreationClient"><br>
+                <label for="telmobileCreationClient" style="margin-left: 40px;">Mobile : </label><input type="tel"
+                    id="telmobileCreationClient">
+            </div>
+            <div class="k_border">
+                <label for="emailCreationClient"><strong>MAIL </strong></label><input type="email"
+                    id="emailCreationClient" style="width: 300px;">
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; display: flex;">
+        <div style="width: 40%;">
+            <div class="k_border">
+                <label for="adresseChantierCreationClient"><strong>Adresse du chantier </strong></label><br>
+                <input id="adresseChantierCreationClient" type="text" style="width: 100%;height: 15vh;">
+            </div>
+        </div>
+        <div style="width: 60%">
+            <div class="k_border">
+                <label for="rdvCreationClient"><strong>Rendez Vous : </strong></label><br>
+                <input id="rdvCreationClient" type="text" style="width: 100%;height: 15vh;">
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <div class="k_border">
+            <label for="projetCreationClient"><strong>PROJET : </strong></label><br>
+            <input type="text" id="projetCreationClient" style="width: 100%; height: 30vh;">
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <div class="k_border">
+            <Strong>Observations : </Strong><br>
+            <input type="checkbox" id="stationnementCreationClient"><label for="stationnementCreationClient">Demande
+                de
+                Stationnement</label><br>
+            <input type="checkbox" id="demandeABFCreationClient"><label for="demandeABFCreationClient">Demande
+                ABF</label><br>
+            <input type="checkbox" id="echafaudageCreationClient"><label for="echafaudageCreationClient">Demande
+                échafaudage</label><br>
+            <input type="checkbox" id="filsElecCreationClient"><label for="filsElecCreationClient">Protection fils
+                électrique</label><br>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <div class="k_border" style="display: flex; justify-content: space-around;">
+            <button class="k_button_supprimer" type="reset">Supprimer</button>
+            <button class="k_button" type="button" onclick="window.print()">Imprimer</button>
+            <button class="k_button" type="submit">Enregistrer</button>
+        </div>
+    </div>
+    </form>
+</div>

@@ -1,0 +1,502 @@
+<div id="k_infos_client">
+    <h1 style="margin: 0; margin-bottom: 20px;">INFORMATIONS CLIENT</h1>
+    <div class="container-fluid" id="k_infos_client_perso">
+        <div class="row d-flex justify-content-between" id="rowInfoClient">
+            <form class="row form-group col-md-10 g-3" id="duplicate">
+
+                <div class="col-12 d-md-flex align-items-center justify-content-between">
+                    <label class="form-label col-2">Nom</label>
+                    <input type="text" class="form-control" id="name" disabled="true">
+                </div>
+                <div class="col-12 d-md-flex align-items-center justify-content-between">
+                    <label class="form-label col-2">Prenom</label>
+                    <input class="form-control" id="last" disabled="true">
+                </div>
+                <div class="col-12 d-md-flex align-items-center justify-content-between">
+                    <label for="exampleInputEmail1" class="col-2">Email</label>
+                    <input type="email" class="form-control" id="mail" aria-describedby="emailHelp" disabled="true">
+                    <div class="invalid-feedback">E-mail invalide </div>
+                </div>
+                <div class="col-12 d-md-flex align-items-center">
+                    <label for="numero" class="form-label col-2">Numero</label>
+                    <div class="col-12 col-md-5">
+                        <input type="tel" class="form-control" id="number" disabled="true">
+                    </div>
+                </div>
+                <div class="col-12 d-md-flex align-items-center justify-contente-between">
+                    <label class="validationServer01 form-label col-2">Adress</label>
+                    <input onFocus="geolocate()" type="text" id="adress" class="form-control" disabled="true">
+                </div>
+                <div id="address">
+                    <div class="row costumerAdress">
+                        <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                            <label class="control-label col-4">Numero</label>
+                            <input class="form-control" id="number1" disabled="true">
+                        </div>
+                        <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                            <label class="control-label col-4">Adresse</label>
+                            <input class="form-control" id="adress1" disabled="true">
+                        </div>
+                    </div>
+                    <div class="row costumerAdress">
+                        <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                            <label class="control-label col-4">Ville</label>
+                            <input class="form-control field" id="city" disabled="true">
+                        </div>
+                        <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                            <label class="control-label col-4">Depart.</label>
+                            <input class="form-control" id="depart" disabled="true">
+                        </div>
+                    </div>
+                    <div class="row costumerAdress">
+                        <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                            <label class="control-label col-4">Code Postal</label>
+                            <input class="form-control" id="postal" disabled="true">
+                        </div>
+                        <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                            <label class="control-label col-4">Pays</label>
+                            <input class="form-control" id="pays" disabled="true">
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+            <img src="./assets/images/avatar.png" style="width: 200px; height: 200px; margin-bottom: 20px;">
+            <div>
+                <span>
+                    <div class="k_couleur_client" id="k_changer_personnalite" onclick="changerPersonnalite()"></div>
+                </span>
+                <span style="display: none; position: absolute;" id="k_changer_perso">
+                    <div id="personnaliteRouge" style="margin-right: 10px;" onclick="personnaliteRouge()"></div>
+                    <div id="personnaliteVert" style="margin-right: 10px;" onclick="personnaliteGreen()"></div>
+                    <div id="personnaliteJaune" style="margin-right: 10px;" onclick="personnaliteYellow()"></div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <h1>PROJETS</h1>
+    <div class="containerInfoClient">
+        <div class="container-ongletsInfoClient d-flex">
+            <div class="ongletsInfoClient activeInfoClient" data-anim="1">PLANIFIES</div>
+            <div class="ongletsInfoClient" data-anim="2">A PLANIFIE</div>
+            <div class="ongletsInfoClient" data-anim="3">EN ATTENTE</div>
+            <div class="ongletsInfoClient" data-anim="4">REALISES</div>
+            <div>
+                <a class="btn btn-outline-danger" id="btn_creer_projet" href="#" role="button" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">CREER PROJET</a>
+            </div>
+        </div>
+
+        <div class="contenuInfoClient activeContenuInfoClient" data-anim="1">
+            <table class="table table-striped text-center table-sortable">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">ID Projet</th>
+                        <th scope="col">Entite</th>
+                        <th scope="col">Date Début Chantier</th>
+                        <th scope="col">Date Fin Previsionnel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="contenuInfoClient" data-anim="2">
+            <table class="table table-striped text-center table-sortable">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">ID Projet</th>
+                        <th scope="col">Entite</th>
+                        <th scope="col">Date Envoi Devis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="contenuInfoClient" data-anim="3">
+            <table class="table table-striped text-center table-sortable">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">ID Projet</th>
+                        <th scope="col">Entite</th>
+                        <th scope="col">Date Création Projet</th>
+                        <th scope="col">Date RDV</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="contenuInfoClient" data-anim="4">
+            <table class="table table-striped text-center table-sortable">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">ID Projet</th>
+                        <th scope="col">Entite</th>
+                        <th scope="col">Date Fin</th>
+                        <th scope="col">Date Derniere Facture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>2021001</td>
+                        <td>Montauban</td>
+                        <td>01/01/2021</td>
+                        <td>01/01/2021</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- <div id="k_projet_realises">
+        <div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                <span>En attente : </span>
+                <select>
+                    <option>Gauthier - Murette - 2021</option>
+                    <option>Facade sud charente - Facade maison - 2021</option>
+                    <option>Facade sud charente - Facade Garage - 2020</option>
+                    <option>Montauban Developement - Maison - 2018</option>
+                </select>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                <span>A plannifié : </span>
+                <select>
+                    <option>Gauthier - Murette - 2021</option>
+                    <option>Facade sud charente - Facade maison - 2021</option>
+                    <option>Facade sud charente - Facade Garage - 2020</option>
+                    <option>Montauban Developement - Maison - 2018</option>
+                </select>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                <span>Plannifié : </span>
+                <select>
+                    <option>Gauthier - Murette - 2021</option>
+                    <option>Facade sud charente - Facade maison - 2021</option>
+                    <option>Facade sud charente - Facade Garage - 2020</option>
+                    <option>Montauban Developement - Maison - 2018</option>
+                </select>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                <span>Réalisés : </span>
+                <select>
+                    <option>Gauthier - Murette - 2021</option>
+                    <option>Facade sud charente - Facade maison - 2021</option>
+                    <option>Facade sud charente - Facade Garage - 2020</option>
+                    <option>Montauban Developement - Maison - 2018</option>
+                </select>
+            </div>
+        </div> -->
+<!-- <div style="display: flex; align-items: center;">
+            <a href="nouveau_projet.php" style="text-decoration: none; color: black;"><button type="button">Nouveaux
+                    projets</button></a>
+        </div>
+    </div> -->
+<div id="k_infos_client_graph" style="display: flex;">
+    <div style="width: 50%;">
+        <canvas id="devis_chart"></canvas>
+    </div>
+    <div style="width: 50%;">
+        <canvas id="projets_graph"></canvas>
+    </div>
+</div>
+</div>
+
+
+<!-- Modal Création de Projet-->
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Création de Projet</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row form-group col-md-8 g-3">
+
+                    <div class="col-12 d-md-flex align-items-center justify-content-between">
+                        <label class="form-label col-2">Nom</label>
+                        <input type="text" class="form-control" id="last_name" placeholder="Nom" required>
+                    </div>
+                    <div class="col-12 d-md-flex align-items-center justify-content-between">
+                        <label class="form-label col-2">Prenom</label>
+                        <input class="form-control" id="first_name" required placeholder="Prenom">
+                    </div>
+                    <div class="col-12 d-md-flex align-items-center justify-content-between">
+                        <label for="exampleInputEmail1" class="col-2">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email" required>
+                        <div class="invalid-feedback">E-mail invalide </div>
+                    </div>
+                    <div class="col-12 d-md-flex align-items-center">
+                        <label for="numero" class="form-label col-2">Numero</label>
+                        <div class="col-12 col-md-5">
+                            <input type="tel" class="form-control" id="telephone" placeholder="Numero"
+                                onkeypress="javascript:return isNumber(event)" pattern="[0-9]">
+                        </div>
+                    </div>
+                    <div class="col-12 d-md-flex align-items-center justify-contente-between">
+                        <label class="validationServer01 form-label col-2">Adress</label>
+                        <input id="autocomplete" placeholder="Entrer l'adresse" onFocus="geolocate()" type="text"
+                            class="form-control" required>
+                    </div>
+                    <div id="address">
+                        <div class="row costumerAdress">
+                            <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                                <label class="control-label col-4">Numero</label>
+                                <input class="form-control" id="street_number" disabled="true">
+                            </div>
+                            <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                                <label class="control-label col-4">Adresse</label>
+                                <input class="form-control" id="route" disabled="true">
+                            </div>
+                        </div>
+                        <div class="row costumerAdress">
+                            <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                                <label class="control-label col-4">Ville</label>
+                                <input class="form-control field" id="locality" disabled="true">
+                            </div>
+                            <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                                <label class="control-label col-4">Depart.</label>
+                                <input class="form-control" id="administrative_area_level_1" disabled="true">
+                            </div>
+                        </div>
+                        <div class="row costumerAdress">
+                            <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                                <label class="control-label col-4">Code Postal</label>
+                                <input class="form-control" id="postal_code" disabled="true">
+                            </div>
+                            <div class="col-md-6 d-md-flex align-items-center justify-contente-between">
+                                <label class="control-label col-4">Pays</label>
+                                <input class="form-control" id="country" disabled="true">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary">Confirmer</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>

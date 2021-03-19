@@ -1,0 +1,29 @@
+#e_conteneur_nav{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+#imageMontauban{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+#e_login{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+#e_login input{
+        background-color:white ;
+        width: 12vw;
+        height:4vh;
+        border:none;
+        margin-right: 10px;
+        border-radius:10px;
+}
+#e_login button{
+    padding:10px;
+    border-radius: 10px;
+}

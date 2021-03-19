@@ -1,0 +1,48 @@
+<div id="k_contact_client">
+    <div style="padding: 20px;">
+        <div style="display: flex; justify-content: space-between;" class="k_container_contact_client">
+            <div style="display: flex; padding-right: 200px;">
+                <label for="nomClientContact">Nom : </label><br>
+                <input type="text" id="nomClientContact" placeholder="Nom du client" value="" style="height: 30px;">
+                <label for="telClientContact" style="margin-left: 10px;">Téléphone : </label><br>
+                <input type="tel" id="telClientContact" placeholder="Numéro de téléphone" value=""
+                    style="height: 30px;">
+            </div>
+            <div>
+                <label for="dateClientContact">Date : </label><br>
+                <input type="date" id="dateClientContact" value="">
+            </div>
+        </div>
+        <div class="k_container_contact_client">
+            <label for="sujetClientContact">Sujet : </label><br>
+            <textarea style="width: 100%; height: 200px;" placeholder="Sujet de l'appel"></textarea>
+        </div>
+        <div style="display: flex; width: 100%; justify-content: space-between;" class="k_container_contact_client">
+            <div>
+                <label for="quiContactClient">Pour qui ? :</label><br>
+                <input type="radio" name="quiContactClient" value="Dominique"><span>Dominique</span><br>
+                <input type="radio" name="quiContactClient" value="Virginie"><span>Virginie</span><br>
+                <input type="radio" name="quiContactClient" value="Loïc"><span>Loïc</span><br>
+                <input type="radio" name="quiContactClient" value="Emmanuel"><span>Emmanuel</span><br>
+                <input type="text"><span> autre</span>
+            </div>
+            <div>
+                <label for="typeContactClient">Type Client : </label><br>
+                <input type="radio" name="typeContactClient" value="Prospect"><span>Prospect</span><br>
+                <input type="radio" name="typeContactClient" value="Client"><span>Client</span><br>
+                <input type="radio" name="typeContactClient" value="Autres"><span>Autres</span><br>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-around;" class="k_container_contact_client">
+            <div>
+                <button type="reset" style="background-color: red; color: white;">Supprimer</button>
+            </div>
+            <div>
+                <button type="button">Ajouter -> Client</button>
+            </div>
+            <div>
+                <button type="submit">Envoyer -> Post-It</button>
+            </div>
+        </div>
+    </div>
+</div>

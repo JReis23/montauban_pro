@@ -1,0 +1,22 @@
+#k_contact_client{
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    font-size: 1.3em;
+}
+.k_container_contact_client{
+    padding-bottom: 40px;
+}
+#k_contact_client input, #k_contact_client textarea{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: black;
+}
+#k_contact_client button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
